@@ -2,18 +2,6 @@
   "name": "yalla-footcopie",
   "version": "1.0.0",
   "private": true,
-  "description": "Application de scores en direct",
-  "main": "index.js",
-  "scripts": {
-    "test": "node node_modules/react-scripts/scripts/test.js",
-    "start": "node node_modules/react-scripts/scripts/start.js",
-    "build": "node node_modules/react-scripts/scripts/build.js",
-    "eject": "node node_modules/react-scripts/scripts/eject.js",
-    "serve": "serve -s build -l 10000"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -27,6 +15,17 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
   },
   "eslintConfig": {
     "extends": [
@@ -48,10 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://v3.football.api-sports.io",
-  "engines": {
-    "node": "18.x",
-    "npm": "9.x"
   }
 }
