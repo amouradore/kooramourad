@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "node node_modules/react-scripts/scripts/build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
