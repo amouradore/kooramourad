@@ -6,7 +6,11 @@ services:
     buildCommand: |
       npm ci
       npm run build
-    startCommand: npx serve -s build -l $PORT
+    startCommand: |
+      npm install -g serve@latest
+      serve -s build -l $PORT --no-clipboard --no-request-logging
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
