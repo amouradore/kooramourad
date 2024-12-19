@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: yalla-foot
+    env: node
+    nodeVersion: 18.x
+    buildCommand: |
+      npm ci
+      chmod +x node_modules/.bin/react-scripts
+      npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CI
+        value: false

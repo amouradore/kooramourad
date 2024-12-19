@@ -1,0 +1,90 @@
+.match-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.match-header-details {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.competition-info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.competition-info h2 {
+  color: #0A1128;
+  margin-bottom: 0.5rem;
+}
+
+.match-score-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.team-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.team-detail img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.team-detail h3 {
+  margin: 0.5rem 0;
+  color: #0A1128;
+}
+
+.team-detail .score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0A1128;
+}
+
+.match-status-detail {
+  padding: 0 2rem;
+}
+
+.match-stats {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.match-stats h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0A1128;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.stat-label {
+  color: #666;
+  text-align: center;
+  flex: 1;
+}
+
+.stat-row span:not(.stat-label) {
+  flex: 0 0 80px;
+  text-align: center;
+  font-weight: bold;
+} 
