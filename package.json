@@ -8,7 +8,8 @@
     "test": "node node_modules/react-scripts/scripts/test.js",
     "start": "node node_modules/react-scripts/scripts/start.js",
     "build": "node node_modules/react-scripts/scripts/build.js",
-    "eject": "node node_modules/react-scripts/scripts/eject.js"
+    "eject": "node node_modules/react-scripts/scripts/eject.js",
+    "serve": "serve -s build -l 10000"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
@@ -30,7 +32,10 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-unused-vars": "warn"
+    }
   },
   "browserslist": {
     "production": [
