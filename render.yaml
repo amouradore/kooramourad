@@ -7,10 +7,8 @@ services:
       npm ci
       npm run build
     startCommand: |
-      npm install -g serve@latest
-      serve build --listen $PORT --single
+      npm install -g serve
+      serve -s build -l $PORT
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 10000
