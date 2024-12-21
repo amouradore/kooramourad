@@ -6,10 +6,11 @@ services:
     buildCommand: |
       npm ci
       chmod +x node_modules/.bin/react-scripts
-      npm run build
+      npx react-scripts build
     startCommand: |
-      npm install -g serve
-      serve -s build -l $PORT
+      npx serve -s build -l $PORT
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 10000
