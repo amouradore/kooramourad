@@ -5,10 +5,10 @@ services:
     nodeVersion: 18.x
     buildCommand: |
       npm ci
-      chmod +x node_modules/.bin/react-scripts
       npx react-scripts build
     startCommand: |
-      npx serve -s build -l $PORT
+      npm install -g serve
+      serve -s build -l $PORT
     envVars:
       - key: NODE_ENV
         value: production
